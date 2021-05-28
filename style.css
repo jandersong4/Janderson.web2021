@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo{
+    text-decoration: none;
+    color: #fff;
+    font-size:  30px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 3%;
+    z-index: 1;
+}
+
+.nav-links{
+    text-align: right;
+    background: #1692dd;
+    padding:10px 30px;
+    border-bottom-left-radius: 18px;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+
+}
+
+.nav-links ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.left-sidebar{
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #1692dd;
+}
+
+.row{
+    
+    padding: 0 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 5%;
+
+}
+
+
+
+.left-col{
+    flex-basis: 35%;
+}
+
+.right-col{
+    flex-basis: 55%;
+}
+
+.left-col img{
+    width: 80%;
+    cursor: pointer;
+     filter: grayscale(0);
+     transition: filter 1s;
+}
+
+.left-col img:hover{
+    filter: grayscale(1);
+}
+
+.right-col h1{
+
+    font-size: 55px;
+    font-weight: 600;
+   
+}
+
+.right-col p{
+    color: black;
+    margin:20px 0  70px;
+}
+
+.social-media{
+    display: flex;
+    margin-top: 30px;
+
+}
+
+.icon{
+    width: 100px;
+    height: 100px;
+    background: #0ab3d123;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.5s;
+    
+}
+
+.icon img{
+    width: 28px;
+}
+
+.icon a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1dc7d7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+.icon a:hover{
+    opacity: 1;
+}
+
+.icon:hover{
+    transform: translateY(-5px);
+}
+
+/* SOBRE O CAMPEONATO */
+
+#sobre{
+   width: 100%;
+   background-color: #e7e8e9;
+}
+
+#sobre h1{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 36px;
+    font-weight: 600;
+    
+}
+
+#sobre p {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 55px;
+}
+
+
+#equipes{
+
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+    
+}
+
+#equipes h1{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 0px;
+    font-size: 36px;
+    font-weight: 600;
+    
+}
+
+#equipes p {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    
+    font-size: 20px;
+    font-weight: 400;
+    padding: 30px;
+}
+
+.equipes-col {
+
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.equipes-col img{
+    width: 100%;
+    height: 450px;
+    display: block;
+}
+
+.equipe-nome1{
+    background: transparent;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 40px;
+    transition: 00.5s;
+
+}
+
+ .equipe-nome1:hover{
+    background:rgba(252, 203, 43, 0.7);
+
+} 
+
+.equipe-nome2{
+    background: transparent;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 40px;
+    transition: 00.5s;
+
+}
+
+ .equipe-nome2:hover{
+    background: #21e2f38a;
+
+} 
+
+.equipe-nome3{
+    background: transparent;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 40px;
+    transition: 00.5s;
+
+}
+
+ .equipe-nome3:hover{
+    background:rgba(226,0,0,0.7);
+
+} 
+
+ .equipe-nome1 h3{
+
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    /* transform: translateX(-50%);
+    position: absolute; */
+} 
+
+.equipe-nome2 h3{
+
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    /* transform: translateX(-50%);
+    position: absolute; */
+} 
+
+.equipe-nome3 h3{
+
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    /* transform: translateX(-50%);
+    position: absolute; */
+} 
+
+/* Grandes Pilotos */
+
+#pilotos-background{
+    width: 100%;
+    background-color: #e7e8e9;
+}
+
+.pilotos{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+
+.pilotos-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    cursor: pointer;
+
+}
+
+.pilotos-col img {
+
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.pilotos-col p{
+    padding: 0;
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+
+a:link 
+{ 
+ text-decoration:none; 
+} 
+
+
+.pilotos-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #000;
+}
+
+.pilotos-col:hover {
+    background:#20dbecc5
+
+}
+
+/* FOOTER */
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0 ;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons {
+    color: #1dc7d7;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+
+
+}
+
